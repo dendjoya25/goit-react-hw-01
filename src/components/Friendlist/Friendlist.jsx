@@ -2,7 +2,7 @@ import React from "react";
 import { FriendListItem } from "./FriendListItem";
 import s from "./FriendList.module.css";
 
-export const Friendlist = ({ friends }) => (
+export const FriendList = ({ friends }) => (
   <ul className={s.userInfoList}>
     {friends.map(({ id, avatar, name, isOnline }) => (
       <li className={s.userInfoListItem} key={id}>
