@@ -1,7 +1,7 @@
 import React from "react";
 import s from "./FriendListItem.module.css";
 
-export function FriendListItem({ avatar, name, isOnline }) {
+function FriendListItem({ avatar, name, isOnline }) {
   return (
     <div className={s.userInfoContainer}>
       <img className={s.userImg} src={avatar} alt="Avatar" width="48" />
@@ -12,3 +12,5 @@ export function FriendListItem({ avatar, name, isOnline }) {
     </div>
   );
 }
+
+export default FriendListItem;

@@ -1,6 +1,7 @@
 import React from "react";
 import s from "./TransactionHistory.module.css";
-export const TransactionHistoryItem = ({ type, amount, currency, isEven }) => {
+
+const TransactionHistoryItem = ({ type, amount, currency, isEven }) => {
   return (
     <tr className={isEven ? s.evenRow : ""}>
       <td>{type}</td>
@@ -9,3 +10,5 @@ export const TransactionHistoryItem = ({ type, amount, currency, isEven }) => {
     </tr>
   );
 };
+
+export default TransactionHistoryItem;

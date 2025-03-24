@@ -1,7 +1,8 @@
 import React from "react";
-import { TransactionHistoryItem } from "./TransactionHistoryItem";
+import TransactionHistoryItem from "./TransactionHistoryItem";
 import s from "./TransactionHistory.module.css";
-export const TransactionHistory = ({ items }) => {
+
+const TransactionHistory = ({ items }) => {
   return (
     <table className={s.wrapper}>
       <thead>
@@ -25,3 +26,5 @@ export const TransactionHistory = ({ items }) => {
     </table>
   );
 };
+
+export default TransactionHistory;
